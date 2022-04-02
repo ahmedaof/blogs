@@ -8,6 +8,8 @@ dbConnect();
 
 app.use('/api/users' , require('./router/user'))
 app.use('/api/auth' , require('./router/auth'))
+app.use('/api/profile' , require('./router/profile'))
+app.use('/api/post' , require('./router/post'))
 let port = process.env.PORT || 5000 ;
 
 app.listen( port , () =>{
